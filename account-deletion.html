@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark" data-page="account-deletion">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap Silme — CoupleHub</title>
+    <meta name="description" content="CoupleHub hesabınızı ve tüm verilerinizi nasıl sileceğinizi öğrenin." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .steps-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .step-v {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .step-v::before {
+            content: '';
+            position: absolute;
+            left: 22px;
+            top: 50px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background: var(--border);
+        }
+
+        .step-v:last-child::before {
+            display: none;
+        }
+
+        .step-v-num {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--pink));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-v-content {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px 28px;
+            flex: 1;
+            margin-bottom: 12px;
+        }
+
+        .step-v-content h3 {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .step-v-content p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: rgba(244, 114, 182, .08);
+            border: 1px solid rgba(244, 114, 182, .3);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 32px;
+        }
+
+        .warning-box h4 {
+            color: var(--pink);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .warning-box ul {
+            padding-left: 18px;
+        }
+
+        .warning-box li {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ch-nav"></div>
+
+    <div class="page-hero">
+        <div class="section-label" data-i18n="ph_deletion_label">🗑️ Veri Yönetimi</div>
+        <h1 data-i18n="ph_deletion_h1">Hesap Silme</h1>
+        <p data-i18n="ph_deletion_sub">Hesabınızı ve tüm verilerinizi kalıcı olarak silme hakkına sahipsiniz.</p>
+        <p class="meta" data-i18n="ph_deletion_meta">Bu işlem geri alınamaz — lütfen dikkatlice okuyun.</p>
+    </div>
+
+    <div class="prose lang-tr">
+
+        <!-- Warning -->
+        <div class="warning-box">
+            <h4>⚠️ Dikkat: Bu işlem geri alınamaz</h4>
+            <ul>
+                <li>Tüm mesajlarınız kalıcı olarak silinir</li>
+                <li>Fotoğraf ve videolarınız (Drive bağlantınız yoksa) kaldırılır</li>
+                <li>Takvim etkinlikleri, zaman kapsülleri ve kuponlar silinir</li>
+                <li>Partner bağlantınız otomatik olarak kopar</li>
+                <li>Hesabınız bir daha geri getirilemez</li>
+            </ul>
+        </div>
+
+        <h2><span class="dot"></span>Yöntem 1: Uygulama İçinden Silme (Önerilen)</h2>
+        <p>En hızlı ve kolay yol, hesabınızı doğrudan uygulama üzerinden silmektir.</p>
+
+        <div class="steps-vertical">
+            <div class="step-v">
+                <div class="step-v-num">1</div>
+                <div class="step-v-content">
+                    <h3>Uygulamayı açın ve giriş yapın</h3>
+                    <p>CoupleHub uygulamasını açın ve hesabınızla giriş yapın.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">2</div>
+                <div class="step-v-content">
+                    <h3>Ayarlar'a gidin</h3>
+                    <p>Ana ekranın sağ üst köşesindeki ⚙️ simgesine veya profil fotoğrafınıza dokunun.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">3</div>
+                <div class="step-v-content">
+                    <h3>Hesap bölümüne ilerleyin</h3>
+                    <p>"Hesap" veya "Profil" bölümünü bulun.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">4</div>
+                <div class="step-v-content">
+                    <h3>"Hesabı Sil" seçeneğine tıklayın</h3>
+                    <p>En altta "Hesabı Kalıcı Olarak Sil" butonunu bulun ve onaylayın.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 48px;"><span class="dot"></span>Yöntem 2: E-posta ile Talep</h2>
+        <p>Uygulamaya erişiminiz yoksa ya da herhangi bir nedenle uygulama içinden silemiyorsanız, bize e-posta
+            gönderin.</p>
+
+        <div class="note">
+            <p>📧 <strong>E-posta adresinizden</strong> aşağıdaki adrese yazın. Hesap sahibi olduğunuzu doğrulamamız
+                için aynı e-posta adresini kullanmanız gerekir.</p>
+        </div>
+
+        <div class="contact-card" style="margin: 32px 0;">
+            <h3>📬 Silme Talebi Gönderin</h3>
+            <p>Konu satırına <strong>"Hesap Silme Talebi"</strong> yazarak e-posta gönderin.</p>
+            <a href="mailto:furkan.er.34@gmail.com?subject=Hesap%20Silme%20Talebi&body=Merhaba%2C%0A%0ACoupleHub%20hesab%C4%B1m%C4%B1%20ve%20t%C3%BCm%20verilerimi%20kalıcı%20olarak%20silmek%20istiyorum.%0A%0AHesap%20e-posta%20adresim%3A%20%5Buraya%20e-posta%20adresinizi%20yazın%5D%0A%0ATeşekkürler."
+                class="email-link">
+                ✉️ furkan.er.34@gmail.com
+            </a>
+            <p style="margin-top: 16px; font-size: 0.82rem;">📋 E-postanıza hesap e-posta adresinizi de ekleyin.</p>
+        </div>
+
+        <h2><span class="dot"></span>Hangi Veriler Silinir?</h2>
+        <ul>
+            <li>✅ Profil bilgileri (ad, e-posta, fotoğraf)</li>
+            <li>✅ Tüm özel mesajlar ve medyalar</li>
+            <li>✅ Takvim etkinlikleri ve hatırlatıcılar</li>
+            <li>✅ Zaman kapsülleri</li>
+            <li>✅ Aşk kuponları</li>
+            <li>✅ Harita noktaları</li>
+            <li>✅ Bildirim token'ları</li>
+            <li>✅ Partner bağlantısı</li>
+            <li>⚠️ Google Drive'daki dosyalar — Drive bağlıysa dosyalar Drive'ınızda kalır. Drive'ı da silmek için <a
+                    href="https://drive.google.com" target="_blank">drive.google.com</a>'dan CoupleHub klasörünü
+                kaldırabilirsiniz.</li>
+        </ul>
+
+        <h2><span class="dot"></span>Ne Zaman Silinir?</h2>
+        <p>Silme talebi onaylandıktan sonra verileriniz <strong>en geç 30 gün</strong> içinde tüm sistemlerimizden
+            kalıcı olarak kaldırılır. E-posta taleplerinde, talebiniz alındıktan sonra kimlik doğrulaması yapılır ve 7
+            iş günü içinde işleme alınır.</p>
+
+        <div class="note" style="margin-top: 32px;">
+            <p>💡 Hesabınızı silmeden önce Google Drive bağlantısını kesmek isterseniz: <strong>Ayarlar → Bulut Depolama
+                    → Drive Bağlantısını Kes</strong> adımlarını takip edin.</p>
+        </div>
+
+    </div>
+
+    <div class="prose lang-en">
+
+        <!-- Warning EN -->
+        <div class="warning-box">
+            <h4>⚠️ Warning: This action cannot be undone</h4>
+            <ul>
+                <li>All your messages will be permanently deleted</li>
+                <li>Your photos and videos (if no Drive connection) will be removed</li>
+                <li>Calendar events, time capsules, and coupons will be deleted</li>
+                <li>Your partner connection will be automatically severed</li>
+                <li>Your account cannot be recovered</li>
+            </ul>
+        </div>
+
+        <h2><span class="dot"></span>Method 1: Delete From Within the App (Recommended)</h2>
+        <p>The fastest and easiest way is to delete your account directly through the app.</p>
+
+        <div class="steps-vertical">
+            <div class="step-v">
+                <div class="step-v-num">1</div>
+                <div class="step-v-content">
+                    <h3>Open the app and sign in</h3>
+                    <p>Open the CoupleHub app and sign in to your account.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">2</div>
+                <div class="step-v-content">
+                    <h3>Go to Settings</h3>
+                    <p>Tap the ⚙️ icon or your profile photo in the top-right corner of the home screen.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">3</div>
+                <div class="step-v-content">
+                    <h3>Navigate to the Account section</h3>
+                    <p>Find the "Account" or "Profile" section.</p>
+                </div>
+            </div>
+            <div class="step-v">
+                <div class="step-v-num">4</div>
+                <div class="step-v-content">
+                    <h3>Tap "Delete Account"</h3>
+                    <p>Find the "Permanently Delete Account" button at the bottom and confirm.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 48px;"><span class="dot"></span>Method 2: Request via E-mail</h2>
+        <p>If you don't have access to the app or are unable to delete from within it for any reason, send us an e-mail.</p>
+
+        <div class="note">
+            <p>📧 Write to the address below <strong>from the e-mail address on your account</strong>. You must use the
+                same e-mail address so we can verify you are the account owner.</p>
+        </div>
+
+        <div class="contact-card" style="margin: 32px 0;">
+            <h3>📬 Send a Deletion Request</h3>
+            <p>Send an e-mail with <strong>"Account Deletion Request"</strong> in the subject line.</p>
+            <a href="mailto:furkan.er.34@gmail.com?subject=Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20permanently%20delete%20my%20CoupleHub%20account%20and%20all%20associated%20data.%0A%0AAccount%20e-mail%3A%20%5Benter%20your%20e-mail%20here%5D%0A%0AThank%20you."
+                class="email-link">
+                ✉️ furkan.er.34@gmail.com
+            </a>
+            <p style="margin-top: 16px; font-size: 0.82rem;">📋 Please include your account e-mail address in the
+                message.</p>
+        </div>
+
+        <h2><span class="dot"></span>What Data Is Deleted?</h2>
+        <ul>
+            <li>✅ Profile information (name, e-mail, photo)</li>
+            <li>✅ All private messages and media</li>
+            <li>✅ Calendar events and reminders</li>
+            <li>✅ Time capsules</li>
+            <li>✅ Love coupons</li>
+            <li>✅ Map locations</li>
+            <li>✅ Notification tokens</li>
+            <li>✅ Partner connection</li>
+            <li>⚠️ Files in Google Drive — if Drive is connected, files remain in your Drive. To delete them, remove the
+                CoupleHub folder from <a href="https://drive.google.com" target="_blank">drive.google.com</a>.</li>
+        </ul>
+
+        <h2><span class="dot"></span>When Is the Data Deleted?</h2>
+        <p>After the deletion request is confirmed, your data will be permanently removed from all our systems within
+            <strong>30 days</strong> at the latest. For e-mail requests, your identity will be verified after we receive
+            your request and it will be processed within 7 business days.</p>
+
+        <div class="note" style="margin-top: 32px;">
+            <p>💡 If you want to disconnect Google Drive before deleting your account, follow:
+                <strong>Settings → Cloud Storage → Disconnect Drive</strong>.</p>
+        </div>
+
+    </div>
+
+    <div id="ch-footer"></div>
+    <script src="assets/shared.js"></script>
+
+</body>
+
+</html>

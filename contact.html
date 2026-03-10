@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark" data-page="contact">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim — CoupleHub</title>
+    <meta name="description" content="CoupleHub ile iletişime geçin. Geliştirici: Furkan Erdoğan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 900px;
+            margin: 48px auto 0;
+            padding: 0 5%;
+        }
+
+        .contact-info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 36px;
+        }
+
+        .contact-info-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .contact-info-card>p {
+            margin-bottom: 28px;
+            font-size: 0.9rem;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-row-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .contact-row-text small {
+            color: var(--subtle);
+            font-size: 0.78rem;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .contact-row-text a {
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .contact-row-text a:hover {
+            color: var(--primary-l);
+        }
+
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 0;
+        }
+
+        .quick-link-item {
+            background: var(--surface-hi);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            transition: border-color .2s, transform .2s;
+        }
+
+        .quick-link-item:hover {
+            border-color: rgba(124, 58, 237, .4);
+            transform: translateX(4px);
+        }
+
+        .quick-link-item span {
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .quick-link-item .arrow {
+            color: var(--subtle);
+        }
+
+        .dev-badge {
+            background: linear-gradient(135deg, rgba(124, 58, 237, .15), rgba(244, 114, 182, .1));
+            border: 1px solid rgba(124, 58, 237, .3);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 48px auto;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .dev-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--pink));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .dev-info h3 {
+            margin-bottom: 4px;
+        }
+
+        .dev-info p {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .dev-info a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--primary-l);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .dev-info a:hover {
+            color: var(--pink);
+        }
+
+        @media (max-width: 660px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ch-nav"></div>
+
+    <div class="page-hero">
+        <div class="section-label" data-i18n="ph_contact_label">📬 İletişim</div>
+        <h1 data-i18n="ph_contact_h1">Merhaba! 👋</h1>
+        <p data-i18n="ph_contact_sub">Sorularınız, önerileriniz veya hesap silme talepleri için bize ulaşabilirsiniz.</p>
+    </div>
+
+    <div class="lang-tr">
+    <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+            <h3>İletişim Bilgileri</h3>
+            <p>En hızlı yanıt için e-posta gönderin. Genellikle 1-2 iş günü içinde dönüş yapılır.</p>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(124,58,237,.15);">✉️</div>
+                <div class="contact-row-text">
+                    <small>Genel & Destek</small>
+                    <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(244,114,182,.15);">🔒</div>
+                <div class="contact-row-text">
+                    <small>Gizlilik & Veri Talepleri</small>
+                    <a href="mailto:furkan.er.34@gmail.com?subject=Gizlilik%20Talebi">furkan.er.34@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(52,211,153,.15);">🗑️</div>
+                <div class="contact-row-text">
+                    <small>Hesap Silme</small>
+                    <a href="mailto:furkan.er.34@gmail.com?subject=Hesap%20Silme%20Talebi">Silme Talebi Gönder</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(251,191,36,.15);">🌐</div>
+                <div class="contact-row-text">
+                    <small>Geliştirici Web Sitesi</small>
+                    <a href="https://furkanerdogan.com" target="_blank">furkanerdogan.com ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <p
+                style="color: var(--subtle); font-size: 0.82rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-bottom: 16px;">
+                Hızlı Bağlantılar</p>
+            <div class="quick-links">
+                <a href="faq.html" class="quick-link-item">
+                    <span>💬 Sık Sorulan Sorular</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="account-deletion.html" class="quick-link-item">
+                    <span>🗑️ Hesap Silme Talebi</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="privacy.html" class="quick-link-item">
+                    <span>🔒 Gizlilik Politikası</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="terms.html" class="quick-link-item">
+                    <span>📋 Kullanım Koşulları</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+
+            <div
+                style="margin-top: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+                <p style="font-weight: 600; color: var(--text); margin-bottom: 4px;">⏱️ Yanıt Süresi</p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">Genel sorular: <strong style="color: var(--text);">1-2
+                        iş günü</strong></p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">Hesap silme: <strong style="color: var(--text);">7 iş
+                        günü</strong></p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">Güvenlik: <strong style="color: var(--text);">24
+                        saat</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Developer Card -->
+    <div class="dev-badge" style="padding: 5%;">
+        <div class="dev-avatar">👨‍💻</div>
+        <div class="dev-info">
+            <h3>Furkan Erdoğan</h3>
+            <p>CoupleHub'ın geliştiricisi ve tasarımcısı. Flutter, Dart ve modern web teknolojileri ile çalışıyorum.</p>
+            <a href="https://furkanerdogan.com" target="_blank">🌐 furkanerdogan.com ↗</a>
+        </div>
+    </div>
+    </div><!-- end lang-tr -->
+
+    <div class="lang-en">
+    <div class="contact-grid">
+        <!-- Contact Info EN -->
+        <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>For the fastest response, send an e-mail. We usually reply within 1–2 business days.</p>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(124,58,237,.15);">✉️</div>
+                <div class="contact-row-text">
+                    <small>General &amp; Support</small>
+                    <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(244,114,182,.15);">🔒</div>
+                <div class="contact-row-text">
+                    <small>Privacy &amp; Data Requests</small>
+                    <a href="mailto:furkan.er.34@gmail.com?subject=Privacy%20Request">furkan.er.34@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(52,211,153,.15);">🗑️</div>
+                <div class="contact-row-text">
+                    <small>Account Deletion</small>
+                    <a href="mailto:furkan.er.34@gmail.com?subject=Account%20Deletion%20Request">Send Deletion Request</a>
+                </div>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-row-icon" style="background: rgba(251,191,36,.15);">🌐</div>
+                <div class="contact-row-text">
+                    <small>Developer Website</small>
+                    <a href="https://furkanerdogan.com" target="_blank">furkanerdogan.com ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links EN -->
+        <div>
+            <p
+                style="color: var(--subtle); font-size: 0.82rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-bottom: 16px;">
+                Quick Links</p>
+            <div class="quick-links">
+                <a href="faq.html" class="quick-link-item">
+                    <span>💬 Frequently Asked Questions</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="account-deletion.html" class="quick-link-item">
+                    <span>🗑️ Account Deletion Request</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="privacy.html" class="quick-link-item">
+                    <span>🔒 Privacy Policy</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="terms.html" class="quick-link-item">
+                    <span>📋 Terms of Use</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+
+            <div
+                style="margin-top: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px;">
+                <p style="font-weight: 600; color: var(--text); margin-bottom: 4px;">⏱️ Response Times</p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">General enquiries: <strong style="color: var(--text);">1–2
+                        business days</strong></p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">Account deletion: <strong style="color: var(--text);">7
+                        business days</strong></p>
+                <p style="font-size: 0.88rem; margin-bottom: 0;">Security issues: <strong
+                        style="color: var(--text);">24 hours</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Developer Card EN -->
+    <div class="dev-badge" style="padding: 5%;">
+        <div class="dev-avatar">👨‍💻</div>
+        <div class="dev-info">
+            <h3>Furkan Erdoğan</h3>
+            <p>Developer and designer of CoupleHub. I work with Flutter, Dart and modern web technologies.</p>
+            <a href="https://furkanerdogan.com" target="_blank">🌐 furkanerdogan.com ↗</a>
+        </div>
+    </div>
+    </div><!-- end lang-en -->
+
+    <div id="ch-footer"></div>
+    <script src="assets/shared.js"></script>
+
+</body>
+
+</html>

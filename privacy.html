@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark" data-page="privacy">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — CoupleHub</title>
+  <meta name="description"
+    content="CoupleHub uygulamasının gizlilik politikası. Verilerinizin nasıl toplandığını ve korunduğunu öğrenin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="ch-nav"></div>
+
+  <div class="page-hero">
+    <div class="section-label" data-i18n="ph_privacy_label">🔒 Yasal</div>
+    <h1 data-i18n="ph_privacy_h1">Gizlilik Politikası</h1>
+    <p data-i18n="ph_privacy_sub">Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu şeffaf bir şekilde açıklıyoruz.</p>
+    <p class="meta" data-i18n="ph_privacy_meta">Son güncelleme: Mart 2026 &nbsp;·&nbsp; Yürürlük tarihi: Mart 2026</p>
+  </div>
+
+  <div class="prose lang-tr">
+
+    <h2><span class="dot"></span>1. Genel Bakış</h2>
+    <p>CoupleHub ("biz", "uygulama"), çiftlerin özel anlarını güvenle paylaşabileceği bir platformdur. Bu Gizlilik
+      Politikası, hangi kişisel verileri topladığımızı, bu verileri ne amaçla kullandığımızı ve nasıl koruduğumuzu
+      açıklar.</p>
+    <div class="note">
+      <p>💡 <strong>Temel ilkemiz:</strong> Kişisel verilerinizi asla üçüncü taraflara satmayız, kiralamayız veya
+        pazarlama amacıyla paylaşmayız.</p>
+    </div>
+
+    <h2><span class="dot"></span>2. Topladığımız Veriler</h2>
+    <p><strong>2.1 Hesap Bilgileri</strong></p>
+    <ul>
+      <li>Ad ve soyad (veya ekran adı)</li>
+      <li>E-posta adresi</li>
+      <li>Profil fotoğrafı (Google/Apple'dan alınan)</li>
+    </ul>
+    <p><strong>2.2 Kimlik Doğrulama</strong></p>
+    <ul>
+      <li>Google OAuth veya Apple ID token'ları (şifre asla saklanmaz)</li>
+      <li>JWT erişim ve yenileme token'ları</li>
+    </ul>
+    <p><strong>2.3 Uygulama İçi İçerik</strong></p>
+    <ul>
+      <li>Mesajlar ve medya dosyaları</li>
+      <li>Takvim etkinlikleri</li>
+      <li>Zaman kapsülleri</li>
+      <li>Aşk kuponları</li>
+      <li>Harita noktaları</li>
+      <li>Müzik listesi linkleri</li>
+    </ul>
+    <p><strong>2.4 Teknik Veriler</strong></p>
+    <ul>
+      <li>Firebase Cloud Messaging (FCM) token'ı — push bildirim için</li>
+      <li>Uygulama içi log kayıtları (hata ayıklama)</li>
+    </ul>
+
+    <h2><span class="dot"></span>3. Verileri Nasıl Kullanırız</h2>
+    <ul>
+      <li>Hesabınızı oluşturmak ve yönetmek</li>
+      <li>Partnerinizle güvenli iletişim sağlamak</li>
+      <li>Push bildirimleri göndermek</li>
+      <li>Uygulama güvenliğini ve performansını iyileştirmek</li>
+      <li>Yasal yükümlülükleri yerine getirmek</li>
+    </ul>
+
+    <h2><span class="dot"></span>4. Google Drive Entegrasyonu</h2>
+    <p>CoupleHub, isteğe bağlı Google Drive entegrasyonu sunar. Bu özelliği etkinleştirirseniz:</p>
+    <ul>
+      <li>Google Drive'ınızda "CoupleHub" adlı özel bir klasör oluşturulur</li>
+      <li>Paylaşılan medyalar bu klasörde saklanır</li>
+      <li>Google Drive erişim ve yenileme token'ları şifreli olarak saklanır</li>
+    </ul>
+    <div class="note">
+      <p>Drive verileriniz yalnızca sizin ve partnerinizin erişimine açıktır. Uygulama sunucuları içeriğe erişemez.</p>
+    </div>
+
+    <h2><span class="dot"></span>5. Veri Güvenliği</h2>
+    <ul>
+      <li><strong>HTTPS / TLS:</strong> Tüm API iletişimi şifreli bağlantı üzerinden yapılır</li>
+      <li><strong>Bcrypt:</strong> Şifreler düz metin olarak asla saklanmaz</li>
+      <li><strong>JWT:</strong> Kısa ömürlü erişim token'ları ve güvenli yenileme mekanizması</li>
+      <li><strong>Mesaj şifreleme:</strong> Özel mesajlar uçtan uca şifreleme ile iletilir</li>
+      <li><strong>Erişim kontrolü:</strong> Verilerinize yalnızca sizin hesabınızdan erişilebilir</li>
+    </ul>
+
+    <h2><span class="dot"></span>6. Üçüncü Taraf Hizmetler</h2>
+    <p>CoupleHub, aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Kimlik doğrulama ve push bildirim altyapısı</li>
+      <li><strong>Google Drive API:</strong> İsteğe bağlı medya depolama</li>
+      <li><strong>Google Sign-In / Apple Sign-In:</strong> Güvenli kayıt ve giriş</li>
+    </ul>
+    <p>Bu hizmetlerin kendi gizlilik politikaları geçerlidir.</p>
+
+    <h2><span class="dot"></span>7. Verileriniz Üzerindeki Haklarınız</h2>
+    <ul>
+      <li><strong>Erişim hakkı:</strong> Hangi verileri sakladığımızı öğrenebilirsiniz</li>
+      <li><strong>Düzeltme hakkı:</strong> Yanlış verilerin düzeltilmesini talep edebilirsiniz</li>
+      <li><strong>Silme hakkı:</strong> Hesabınızı ve tüm verilerinizi silebilirsiniz</li>
+      <li><strong>Taşınabilirlik hakkı:</strong> Verilerinizin bir kopyasını talep edebilirsiniz</li>
+      <li><strong>İtiraz hakkı:</strong> Belirli işlemlere itiraz edebilirsiniz</li>
+    </ul>
+    <div class="note">
+      <p>Haklarınızı kullanmak için: <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a> adresine e-posta
+        gönderin.</p>
+    </div>
+
+    <h2><span class="dot"></span>8. Hesap Silme</h2>
+    <p>Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz. Ayrıntılı bilgi için <a
+        href="account-deletion.html">Hesap Silme</a> sayfasını ziyaret edin.</p>
+
+    <h2><span class="dot"></span>9. Politika Değişiklikleri</h2>
+    <p>Bu politikayı güncellediğimizde, değişiklikler bu sayfada yayınlanır. Önemli değişiklikler için uygulama içinden
+      bildirim gönderilebilir. Son güncelleme tarihini her zaman bu sayfanın başında bulabilirsiniz.</p>
+
+    <h2><span class="dot"></span>10. İletişim</h2>
+    <div class="contact-card">
+      <h3>📬 Gizlilik Soruları</h3>
+      <p>Gizliliğinizle ilgili her türlü soru veya talep için:</p>
+      <a href="mailto:furkan.er.34@gmail.com?subject=Gizlilik%20Talebi" class="email-link">✉️ furkan.er.34@gmail.com</a>
+      <p style="margin-top: 16px; font-size: 0.82rem;">Geliştirici: <a href="https://furkanerdogan.com" target="_blank"
+          style="color: var(--primary-l);">furkanerdogan.com ↗</a></p>
+    </div>
+
+  </div>
+
+  <!-- ── ENGLISH PRIVACY CONTENT ──────────────────────── -->
+  <div class="prose lang-en" style="display:none">
+
+    <h2><span class="dot"></span>1. Overview</h2>
+    <p>CoupleHub ("we", "app") is a platform where couples can securely share their private moments. This Privacy Policy explains what personal data we collect, the purposes for which we use it, and how we protect it.</p>
+    <div class="note">
+      <p>💡 <strong>Our core principle:</strong> We will never sell, rent, or share your personal data with third parties for marketing purposes.</p>
+    </div>
+
+    <h2><span class="dot"></span>2. Data We Collect</h2>
+    <p><strong>2.1 Account Information</strong></p>
+    <ul>
+      <li>Name and surname (or display name)</li>
+      <li>Email address</li>
+      <li>Profile photo (obtained from Google/Apple)</li>
+    </ul>
+    <p><strong>2.2 Authentication</strong></p>
+    <ul>
+      <li>Google OAuth or Apple ID tokens (passwords are never stored)</li>
+      <li>JWT access and refresh tokens</li>
+    </ul>
+    <p><strong>2.3 In-App Content</strong></p>
+    <ul>
+      <li>Messages and media files</li>
+      <li>Calendar events</li>
+      <li>Time capsules</li>
+      <li>Love coupons</li>
+      <li>Map locations</li>
+      <li>Music playlist links</li>
+    </ul>
+    <p><strong>2.4 Technical Data</strong></p>
+    <ul>
+      <li>Firebase Cloud Messaging (FCM) token — for push notifications</li>
+      <li>In-app log records (debugging)</li>
+    </ul>
+
+    <h2><span class="dot"></span>3. How We Use Your Data</h2>
+    <ul>
+      <li>To create and manage your account</li>
+      <li>To enable secure communication with your partner</li>
+      <li>To send push notifications</li>
+      <li>To improve app security and performance</li>
+      <li>To fulfill legal obligations</li>
+    </ul>
+
+    <h2><span class="dot"></span>4. Google Drive Integration</h2>
+    <p>CoupleHub offers optional Google Drive integration. If you enable this feature:</p>
+    <ul>
+      <li>A dedicated "CoupleHub" folder is created in your Google Drive</li>
+      <li>Shared media is stored in this folder</li>
+      <li>Google Drive access and refresh tokens are stored encrypted</li>
+    </ul>
+    <div class="note">
+      <p>Your Drive data is only accessible by you and your partner. App servers cannot access the content.</p>
+    </div>
+
+    <h2><span class="dot"></span>5. Data Security</h2>
+    <ul>
+      <li><strong>HTTPS / TLS:</strong> All API communication is made over encrypted connections</li>
+      <li><strong>Bcrypt:</strong> Passwords are never stored in plain text</li>
+      <li><strong>JWT:</strong> Short-lived access tokens and secure refresh mechanism</li>
+      <li><strong>Message encryption:</strong> Private messages are transmitted with end-to-end encryption</li>
+      <li><strong>Access control:</strong> Your data can only be accessed from your account</li>
+    </ul>
+
+    <h2><span class="dot"></span>6. Third-Party Services</h2>
+    <p>CoupleHub uses the following third-party services:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Authentication and push notification infrastructure</li>
+      <li><strong>Google Drive API:</strong> Optional media storage</li>
+      <li><strong>Google Sign-In / Apple Sign-In:</strong> Secure registration and login</li>
+    </ul>
+    <p>The privacy policies of these services apply to their respective data processing.</p>
+
+    <h2><span class="dot"></span>7. Your Rights Over Your Data</h2>
+    <ul>
+      <li><strong>Right of access:</strong> You can learn what data we hold about you</li>
+      <li><strong>Right of rectification:</strong> You can request correction of inaccurate data</li>
+      <li><strong>Right to erasure:</strong> You can delete your account and all your data</li>
+      <li><strong>Right to portability:</strong> You can request a copy of your data</li>
+      <li><strong>Right to object:</strong> You can object to certain processing activities</li>
+    </ul>
+    <div class="note">
+      <p>To exercise your rights: send an email to <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a></p>
+    </div>
+
+    <h2><span class="dot"></span>8. Account Deletion</h2>
+    <p>You can permanently delete your account and all your data. For detailed information, visit the <a href="account-deletion.html">Account Deletion</a> page.</p>
+
+    <h2><span class="dot"></span>9. Policy Changes</h2>
+    <p>When we update this policy, changes will be published on this page. For significant changes, an in-app notification may be sent. You can always find the last update date at the top of this page.</p>
+
+    <h2><span class="dot"></span>10. Contact</h2>
+    <div class="contact-card">
+      <h3>📬 Privacy Questions</h3>
+      <p>For any questions or requests regarding your privacy:</p>
+      <a href="mailto:furkan.er.34@gmail.com?subject=Privacy%20Request" class="email-link">✉️ furkan.er.34@gmail.com</a>
+      <p style="margin-top: 16px; font-size: 0.82rem;">Developer: <a href="https://furkanerdogan.com" target="_blank" style="color: var(--primary-l);">furkanerdogan.com ↗</a></p>
+    </div>
+
+  </div>
+
+  <div id="ch-footer"></div>
+
+  <script src="assets/shared.js"></script>
+
+</body>
+
+</html>
