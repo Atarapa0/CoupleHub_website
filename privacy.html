@@ -21,8 +21,10 @@
   <div class="page-hero">
     <div class="section-label" data-i18n="ph_privacy_label">🔒 Yasal</div>
     <h1 data-i18n="ph_privacy_h1">Gizlilik Politikası</h1>
-    <p data-i18n="ph_privacy_sub">Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu şeffaf bir şekilde açıklıyoruz.</p>
-    <p class="meta" data-i18n="ph_privacy_meta">Son güncelleme: Mart 2026 &nbsp;·&nbsp; Yürürlük tarihi: Mart 2026</p>
+    <p data-i18n="ph_privacy_sub">Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu şeffaf bir şekilde
+      açıklıyoruz.</p>
+    <p class="meta" data-i18n="ph_privacy_meta">Son güncelleme: 13 Mart 2026 &nbsp;·&nbsp; Yürürlük tarihi: Mart 2026
+    </p>
   </div>
 
   <div class="prose lang-tr">
@@ -85,10 +87,12 @@
 
     <h2><span class="dot"></span>5. Veri Güvenliği</h2>
     <ul>
-      <li><strong>HTTPS / TLS:</strong> Tüm API iletişimi şifreli bağlantı üzerinden yapılır</li>
+      <li><strong>HTTPS / TLS:</strong> Tüm API iletişimi şifreli bağlantı (SSL) ve gelişmiş güvenlik başlıkları (HSTS,
+        CSP, NoSniff) ile korunur</li>
       <li><strong>Bcrypt:</strong> Şifreler düz metin olarak asla saklanmaz</li>
       <li><strong>JWT:</strong> Kısa ömürlü erişim token'ları ve güvenli yenileme mekanizması</li>
-      <li><strong>Mesaj şifreleme:</strong> Özel mesajlar uçtan uca şifreleme ile iletilir</li>
+      <li><strong>Uçtan Uca Şifreleme (E2EE):</strong> Özel mesajlar cihazınızda şifrelenir ve yalnızca partneriniz
+        tarafından çözülebilir. Sunucularımız mesaj içeriğini düz metin olarak göremez.</li>
       <li><strong>Erişim kontrolü:</strong> Verilerinize yalnızca sizin hesabınızdan erişilebilir</li>
     </ul>
 
@@ -114,9 +118,14 @@
         gönderin.</p>
     </div>
 
-    <h2><span class="dot"></span>8. Hesap Silme</h2>
-    <p>Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz. Ayrıntılı bilgi için <a
-        href="account-deletion.html">Hesap Silme</a> sayfasını ziyaret edin.</p>
+    <h2><span class="dot"></span>8. Hesap ve Veri Silme</h2>
+    <p><strong>8.1 Manuel Silme:</strong> Hesabınızı uygulama içinden istediğiniz an kalıcı olarak silebilirsiniz.</p>
+    <p><strong>8.2 Partner Ayrılığı:</strong> Partnerinizle bağlantınızı kopardığınızda, aradaki ortak veriler
+      (mesajlar, kuponlar vb.) <strong>30 gün boyunca</strong> askıya alınır. Bu süre içinde yeniden bağlanmazsanız, tüm
+      ortak veriler sistemden otomatik ve kalıcı olarak silinir.</p>
+    <p><strong>8.3 Yeni Eşleşme:</strong> Yeni bir partnerle eşleştiğinizde, eski partnerinizden kalan hiçbir veri
+      (mesajlar, kapsüller vb.) yeni partnerinize aktarılmaz; her yeni eşleşme temiz bir sayfa ile başlar.</p>
+    <p>Ayrıntılı bilgi için <a href="account-deletion.html">Hesap Silme</a> sayfasını ziyaret edin.</p>
 
     <h2><span class="dot"></span>9. Politika Değişiklikleri</h2>
     <p>Bu politikayı güncellediğimizde, değişiklikler bu sayfada yayınlanır. Önemli değişiklikler için uygulama içinden
@@ -127,6 +136,10 @@
       <h3>📬 Gizlilik Soruları</h3>
       <p>Gizliliğinizle ilgili her türlü soru veya talep için:</p>
       <a href="mailto:furkan.er.34@gmail.com?subject=Gizlilik%20Talebi" class="email-link">✉️ furkan.er.34@gmail.com</a>
+      <p style="margin-top: 16px; font-size: 0.85rem; color: var(--muted);"><strong>Sorumluluk Reddi:</strong> Uygulama
+        güvenliği için gerekli tüm siber güvenlik önlemleri (Uçtan Uca Şifreleme, Rate Limiting, Güvenli Başlıklar)
+        alınmış olsa da, kullanıcıların kötü niyetli kullanımı veya öngörülemeyen siber saldırılar sonucunda
+        oluşabilecek veri kayıplarından/durumlardan geliştirici hukuki mesuliyet kabul etmez.</p>
       <p style="margin-top: 16px; font-size: 0.82rem;">Geliştirici: <a href="https://furkanerdogan.com" target="_blank"
           style="color: var(--primary-l);">furkanerdogan.com ↗</a></p>
     </div>
@@ -137,9 +150,11 @@
   <div class="prose lang-en" style="display:none">
 
     <h2><span class="dot"></span>1. Overview</h2>
-    <p>CoupleHub ("we", "app") is a platform where couples can securely share their private moments. This Privacy Policy explains what personal data we collect, the purposes for which we use it, and how we protect it.</p>
+    <p>CoupleHub ("we", "app") is a platform where couples can securely share their private moments. This Privacy Policy
+      explains what personal data we collect, the purposes for which we use it, and how we protect it.</p>
     <div class="note">
-      <p>💡 <strong>Our core principle:</strong> We will never sell, rent, or share your personal data with third parties for marketing purposes.</p>
+      <p>💡 <strong>Our core principle:</strong> We will never sell, rent, or share your personal data with third
+        parties for marketing purposes.</p>
     </div>
 
     <h2><span class="dot"></span>2. Data We Collect</h2>
@@ -191,10 +206,12 @@
 
     <h2><span class="dot"></span>5. Data Security</h2>
     <ul>
-      <li><strong>HTTPS / TLS:</strong> All API communication is made over encrypted connections</li>
+      <li><strong>HTTPS / TLS:</strong> All API communication is protected via encrypted connections (SSL) and advanced
+        security headers (HSTS, CSP, NoSniff)</li>
       <li><strong>Bcrypt:</strong> Passwords are never stored in plain text</li>
       <li><strong>JWT:</strong> Short-lived access tokens and secure refresh mechanism</li>
-      <li><strong>Message encryption:</strong> Private messages are transmitted with end-to-end encryption</li>
+      <li><strong>End-to-End Encryption (E2EE):</strong> Private messages are encrypted on your device and can only be
+        decrypted by your partner. Our servers cannot read your message content.</li>
       <li><strong>Access control:</strong> Your data can only be accessed from your account</li>
     </ul>
 
@@ -216,21 +233,35 @@
       <li><strong>Right to object:</strong> You can object to certain processing activities</li>
     </ul>
     <div class="note">
-      <p>To exercise your rights: send an email to <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a></p>
+      <p>To exercise your rights: send an email to <a href="mailto:furkan.er.34@gmail.com">furkan.er.34@gmail.com</a>
+      </p>
     </div>
 
-    <h2><span class="dot"></span>8. Account Deletion</h2>
-    <p>You can permanently delete your account and all your data. For detailed information, visit the <a href="account-deletion.html">Account Deletion</a> page.</p>
+    <h2><span class="dot"></span>8. Account and Data Deletion</h2>
+    <p><strong>8.1 Manual Deletion:</strong> You can permanently delete your account and all your data from within the
+      app at any time.</p>
+    <p><strong>8.2 Partner Breakup:</strong> When you disconnect from your partner, shared data (messages, coupons,
+      etc.) is suspended for <strong>30 days</strong>. If you do not reconnect within this period, all shared data is
+      automatically and permanently deleted from the system.</p>
+    <p><strong>8.3 New Match:</strong> When you match with a new partner, no data from your previous partner (messages,
+      capsules, etc.) is transferred to the new partner; every new match starts with a clean slate.</p>
+    <p>For more information, visit the <a href="account-deletion.html">Account Deletion</a> page.</p>
 
     <h2><span class="dot"></span>9. Policy Changes</h2>
-    <p>When we update this policy, changes will be published on this page. For significant changes, an in-app notification may be sent. You can always find the last update date at the top of this page.</p>
+    <p>When we update this policy, changes will be published on this page. For significant changes, an in-app
+      notification may be sent. You can always find the last update date at the top of this page.</p>
 
     <h2><span class="dot"></span>10. Contact</h2>
     <div class="contact-card">
       <h3>📬 Privacy Questions</h3>
       <p>For any questions or requests regarding your privacy:</p>
       <a href="mailto:furkan.er.34@gmail.com?subject=Privacy%20Request" class="email-link">✉️ furkan.er.34@gmail.com</a>
-      <p style="margin-top: 16px; font-size: 0.82rem;">Developer: <a href="https://furkanerdogan.com" target="_blank" style="color: var(--primary-l);">furkanerdogan.com ↗</a></p>
+      <p style="margin-top: 16px; font-size: 0.85rem; color: var(--muted);"><strong>Disclaimer:</strong> While all
+        necessary cyber security measures (End-to-End Encryption, Rate Limiting, Secure Headers) have been taken, the
+        developer accepts no legal liability for data loss or situations resulting from malicious use by users or
+        unforeseen cyber attacks.</p>
+      <p style="margin-top: 16px; font-size: 0.82rem;">Developer: <a href="https://furkanerdogan.com" target="_blank"
+          style="color: var(--primary-l);">furkanerdogan.com ↗</a></p>
     </div>
 
   </div>
